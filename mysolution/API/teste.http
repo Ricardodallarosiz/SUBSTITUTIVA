@@ -1,0 +1,38 @@
+POST http://localhost:5073/api/aluno/cadastrar
+Content-Type: application/json
+
+{
+    "Nome":"Ricardo",
+    "DataNadcimento":"2002-11-27"
+
+}   
+
+###
+
+###
+POST http://localhost:5073/api/imc/cadastrar
+Content-Type: application/json
+
+{ 
+    "AlunoId": 1,
+    "altura":"1.65",
+    "peso":"74"
+
+}
+
+###
+GET http://localhost:5073/api/imc/listar
+
+
+###
+
+###
+PUT http://localhost:5073/api/imc/alterar/1
+Content-Type: application/json
+
+{ 
+    
+    "altura":"1.50",
+    "peso":"100"
+
+}
